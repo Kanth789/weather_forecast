@@ -1,9 +1,10 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import EnhancedTable from "./Table";
 import { Typography } from "@mui/material";
 import { useDispatch } from "react-redux";
-import { citiesData, fetchedRows } from "../reudx/actions";
+import { citiesData} from "../reudx/actions";
 import { useSelector } from "react-redux";
 
 interface Coordinates {
