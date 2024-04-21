@@ -181,6 +181,7 @@ function EnhancedTableToolbar(props: EnhancedTableToolbarProps) {
         pl: { sm: 2 },
         pr: { xs: 1, sm: 1 },
       }}
+      style={{position:'sticky',top:0,backgroundColor:'white',zIndex:1000,borderBottom:'1px solid grey'}}
     >
       <Typography
         component="div"
@@ -342,7 +343,7 @@ export default function EnhancedTable(props: { cities: CitiesData }) {
 
   return (
     <Box sx={{ width: "100%" }}>
-      <Paper sx={{ width: "100%", mb: 2,pt:2 }}>
+      <Paper sx={{ width: "100%", mb: 2,pt:2, }}>
         <EnhancedTableToolbar
           numSelected={selected.length}
           searchQuery={searchQuery}

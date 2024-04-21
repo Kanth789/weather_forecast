@@ -69,7 +69,7 @@ const CityTable: React.FC = () => {
 
   return (
     <>
-      <div className="bg-slate-100 p-4" style={{height:'100vh'}} >
+      <div className="bg-slate-100 p-4" style={{paddingBottom:60}} >
         <Typography variant="h3" align="center" style={{paddingBottom:10}}>Weather Forecast</Typography>
         <EnhancedTable cities={cities} />
       </div>
